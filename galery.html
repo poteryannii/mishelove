@@ -8,55 +8,38 @@
 <body>
 		<header><center><strong>Gallery</strong></center></header>
 		<hr>
-		<ul>
-			<li><a href=index.html>home page</a></li>
-		</ul>
+			<ul>
+				<a href=index.html>home page</a>
+			</ul>
 		<hr>
 		<main>
 			<!-- The grid: four columns -->
-			<div class="row">
-				<center>
-				<table width="auto" cellspacing="auto" cellpadding="2" border="1"> 
-					<tr>
-						<td><div class="column">
-							<img src="photo 1.jpg" alt="Nature" onclick="openImg(this);">
-						</div></td>
-						<td><div class="column">
-							<img src="photo 2.jpg" alt="Snow" onclick="openImg(this);">
-						</div></td>
-						</tr>
-						<tr>
-						<td><div class="column">
-							<img src="photo 3.jpg" alt="Lights" onclick="openImg(this);">
-						</div></td>
-						<td><div class="column">
-							<img src="photo 4.jpg" alt="Mountains" onclick="openImg(this);"></td>
-					</tr>
-					<tr>
-						<td><div class="column">
-							<img src="photo 5.jpg" alt="Lights" onclick="openImg(this);">
-						</div></td>
-						<td><div class="column">
-							<img src="photo 6.jpg" alt="Lights" onclick="openImg(this);">
-						</div></td>
-					</tr>
+			<div class="gallery1">
+				<div class="column">
+					<img class="galleryimage" src="photo 1.jpg" alt="Nature" onclick="openImg(this);">
 				</div>
-				
-			</table></center>
+			
+				<div class="column">
+					<img class="galleryimage" src="photo 2.jpg" alt="Snow" onclick="openImg(this);">
+				</div>
+			
+				<div class="column">
+					<img class="galleryimage" src="photo 3.jpg" alt="Lights" onclick="openImg(this);">
+				</div>
+			
+				<div class="column">
+					<img class="galleryimage" src="photo 4.jpg" alt="Mountains" onclick="openImg(this);">
+				</div>
+			
+				<div class="column">
+					<img class="galleryimage" src="photo 5.jpg" alt="Lights" onclick="openImg(this);">
+				</div>
+			
+				<div class="column">
+					<img class="galleryimage" src="photo 6.jpg" alt="Lights" onclick="openImg(this);">
+				</div>
+			
 			</div>
-			</table>
-			
-			<!-- The expanding image container -->
-			<div class="container">
-				<!-- Close the image -->
-				<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-			
-				<!-- Expanded image -->
-				<img id="expandedImg" style="width:100%">
-			
-				<!-- Image text -->
-				<div id="imgtext"></div>
-			</div></tr></table>
 		</main>
 	
 </body>

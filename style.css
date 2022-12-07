@@ -3,3 +3,31 @@ body {
 	border-width: 10%;
   padding: 20px;
 }
+a{
+	color: brown;
+	position: relative; 
+	left: 2%;
+	text-decoration: none;
+}
+header {
+	font-family: 'Hanalei Fill',
+		cursive; 
+		color: crimson;
+}
+.radicktext{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.shantytext{
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.gallery1 {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: repeat(2, minmax(50px, 1800px));
+	place-items: center center;
+	gap: 20px 40px;
+	max-width: auto;
+}
+.galleryimage {
+	max-width: 45vw;
+}
